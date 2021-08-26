@@ -1,0 +1,58 @@
+.nav-bar {
+  position: fixed;
+  background: linear-gradient(
+    to right,
+    rgba(153, 38, 240, 0.95),
+    rgba(209, 34, 227, 0.95)
+  );
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  .logo {
+    float: left;
+    width: 30%;
+  }
+  ul {
+    width: 65%;
+    float: right;
+    li {
+      display: inline-block;
+      font-family: "Open Sans", sans-serif;
+      font-weight: $weight;
+      margin-top: 14px;
+      font-size: 15px;
+      &:not(:last-of-type) {
+        margin-right: 40px;
+      }
+      a {
+        @include prefixer(transition, 0.3s, webkit);
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.55);
+        &.active {
+          color: #fff;
+        }
+        &:hover {
+          color: #fff;
+        }
+        &.call {
+          background-color: #fff;
+          color: #000;
+          padding: 15px 5px 15px 23px;
+          border-radius: 54px;
+          i {
+            background: #9926f0;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 50%;
+            color: #fff;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+.main {
+  margin-top: 90px;
+}

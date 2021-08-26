@@ -1,0 +1,11 @@
+h1 {
+  font: {
+    weight: $weight;
+    size: 60px;
+  }
+}
+h2 {
+  background-image: $linearColor;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
